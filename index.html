@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Web-Context by Web-Context</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Web-Context by Web-Context</title>
+  
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="webblogapp">
     <div class="wrapper">
       <header>
         <img src="https://avatars1.githubusercontent.com/u/7290957?s=140"/>
@@ -20,41 +20,13 @@
         <p>The website of the WebContext </p>
         <p class="view"><a href="https://github.com/Web-Context">View My GitHub Profile</a></p>
       </header>
-      <section>
-        <h3>
-<a name="welcome-to-our-tutos-home" class="anchor" href="#welcome-to-our-tutos-home"><span class="octicon octicon-link"></span></a>Welcome to our Tutos home</h3>
-
-<p>This is the web site for the WebContext Team, trying to provide some Java tutorials, but not on Java language, but about tooling !</p>
-
-<p>The first tutorial will be a Maven one.</p>
-
-<p>Just discover how to use and implement a pom.xml in your pjava project , to manage version, packaging and release for your project, like profesional people :)</p>
-
-<pre><code>$ git clone git@github.com:Web-Context/tutorial-maven.git
-</code></pre>
-
-<p>then just do a :</p>
-
-<pre><code>$ mvn clean install
-</code></pre>
-
-<p>And observe the samples projects, reading the maven-stepX(*.html file to discover and try to understand the magical capabilities of the Maven tools.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p><a href="https://github.com/McGivrer" class="user-mention">@McGivrer</a> is a Web architect, playing with java for more than 10 years, and sandboxing software for 15 years.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Need some help, try to create an issue on <a href="http://github.com/web-context/tutorial-maven/issues">http://github.com/web-context/tutorial-maven/issues</a></p>
-      </section>
+      <div class="content" ng-view></div>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.js" type="text/javascript"></script>
   </body>
 </html>
