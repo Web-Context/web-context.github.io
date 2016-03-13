@@ -24,6 +24,7 @@ app.factory("PostService",['$http', function($http){
 					var item = response.data[i];
 					if(item.id === id){
 						item['createdAt'] = new Date(item['createdAt']);
+						item['name'] = item['title'].replace(/\s+/g, '-').toLowerCase();
 						post=item;
 					}
 				}

@@ -2,8 +2,8 @@
 	<div class="info" ng-if="!posts">No post found !</div>
 	<article ng-repeat="post in posts">
 		<h3><a name="{{post.name}}" class="anchor" href="#/post/{{post.id}}"><span class="octicon octicon-link"></span>{{post.title}}</a></h3>
-		<div class="tags"><a  ng-repeat="tag in post.tags" href="{{tag}}">{{tag}}</a></div>
+		<div class="tags"><a ng-repeat="tag in post.tags" href="{{tag}}">{{tag}}</a></div>
 		<div class="content" ng-bind-html="post.content"></div>
-		<div class="infos"><ul><li>{{post.author | date:'dd-MM-yyyy'}}</li><li>{{post.createdAt}}</li></ul></div>
+		<div class="infos"><ul><li>{{post.author}}</li><li>{{post.createdAt | date:'dd-MM-yyyy'}}</li></ul></div>
 	</article>
 </section>

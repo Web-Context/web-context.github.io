@@ -2,6 +2,6 @@
 
 app.controller("PostViewCtrl", ['$scope', '$routeParams','PostService', function($scope, $routeParams, PostService){
 	PostService.findByTitle($routeParams.title).then(function(data){
-		$scope.posts = data;
+		$scope.post = data;
 	});
 }]);
