@@ -1,0 +1,6 @@
+<article>
+	<h3><a name="#" class="anchor" href="#/post/{{post.title}}"><span class="octicon octicon-link"></span>{{post.title}}</a></h3>
+	<div class="tags"><ul><li ng-repeat="item in post.tags"><a href="{{item.tag}}">{{item.tag}}</a></li></ul></div>
+	<div class="content" ng-bind-html="post.content"></div>
+	<div class="infos"><ul><li>{{post.author | date:'dd/MMM/yyyy'}}</li><li>{{post.createdAt}}</li></ul></div>
+</article>

@@ -15,7 +15,11 @@ h1, h2, h3, h4, h5, h6 {
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
-
+h3{
+  margin-top:2em;
+  font-weight:bold;
+  font-size: 20pt;
+}
 h1, h2, h3 {
   line-height:1.1;
 }
@@ -31,25 +35,57 @@ h2 {
 h3, h4, h5, h6 {
   color:#494949;
 }
-
 a {
   color:#39c;
   font-weight:400;
   text-decoration:none;
 }
-
 a small {
   font-size:11px;
   color:#777;
   margin-top:-0.6em;
   display:block;
 }
-
+.tags {
+  list-style: none;
+  padding:0px;
+  margin:10px;
+}
+.tags a {
+  text-decoration:none;
+  color:#666;
+}
+.tags a:before {
+  content:" / ";
+}
+.tags a:hover {
+  color:#333;
+  text-shadow: 2px 2px 8px #888,-2px -2px 8px #888,-2px 2px 8px #888,2px -2px 8px #888;
+}
 .wrapper {
   width:860px;
   margin:0 auto;
 }
-
+.infos {
+  border-top:1px dotted #888;
+  text-align:right;
+}
+.infos ul {
+  margin:0px;
+  padding:0px;
+}
+.infos ul li {
+  display:inline-block;
+  list-style: none;
+  margin:0px;
+  padding:4px;  
+}
+.infos ul li:before {
+  content:" / ";
+}
+.infos ul:first-child li:before{
+  content:"";
+} 
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;

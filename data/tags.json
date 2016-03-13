@@ -1,0 +1,56 @@
+[
+    {
+        "tag": "blog"
+    },
+    {
+        "tag": "spring"
+    },
+    {
+        "tag": "maven"
+    },
+    {
+        "tag": "dev"
+    },
+    {
+        "tag": "agile"
+    },
+    {
+        "tag": "tutorial"
+    },
+    {
+        "tag": "publish"
+    },
+    {
+        "tag": "author"
+    },
+    {
+        "tag": "create"
+    },
+    {
+        "tag": "build"
+    },
+    {
+        "tag": "yeoman"
+    },
+    {
+        "tag": "grunt"
+    },
+    {
+        "tag": "bower"
+    },
+    {
+        "tag": "gulp"
+    },
+    {
+        "tag": "gradle"
+    },
+    {
+        "tag": "java"
+    },
+    {
+        "tag": "angularjs"
+    },
+    {
+        "tag": "spring-boot"
+    }
+]
