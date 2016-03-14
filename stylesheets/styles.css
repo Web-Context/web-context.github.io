@@ -56,7 +56,7 @@ a small {
   color:#666;
 }
 .tags a:before {
-  content:" / ";
+  content:" /";
 }
 .tags a:hover {
   color:#333;
@@ -288,4 +288,14 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+.animate-enter {
+  -webkit-transition: 1s linear all; /* Chrome */
+  transition: 1s linear all;
+  opacity: 0;
+}
+ 
+.animate-enter.animate-enter-active {
+  opacity: 1;
 }

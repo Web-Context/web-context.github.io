@@ -44,6 +44,20 @@ app.factory("PostService",['$http', function($http){
 				}
 				return results;
 			});
+		},
+		findByTag: function(tag){
+			return $http.get("data/posts.json")
+			.then(function(response){
+				var results= [];
+				for (var i = 0; i < response.data.length; i++) {
+					var item = response.data[i];
+					if(item.title.toLowerCase().indexOf(title.toLowerCase())){
+						item['createdAt'] = new Date(item['createdAt']);
+						results.push(item);
+					}
+				}
+				return results;
+			});
 		}
 	};
 }]);

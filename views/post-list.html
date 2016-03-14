@@ -1,6 +1,6 @@
 <section class="post">
 	<div class="info" ng-if="!posts">No post found !</div>
-	<article ng-repeat="post in posts">
+	<article ng-repeat="post in posts | orderBy:createdAt" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
 		<h3><a name="{{post.name}}" class="anchor" href="#/post/{{post.id}}"><span class="octicon octicon-link"></span>{{post.title}}</a></h3>
 		<div class="tags"><a ng-repeat="tag in post.tags" href="{{tag}}">{{tag}}</a></div>
 		<div class="content" ng-bind-html="post.content"></div>
